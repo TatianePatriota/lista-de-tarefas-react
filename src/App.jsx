@@ -18,7 +18,7 @@ const App = () => {
     {
       id: '2',
       title: 'Estudar React',
-      completed: true,
+      completed: false,
     },
     {
       id:'3',
@@ -30,11 +30,6 @@ const App = () => {
       title: 'Fazer um Projeto Novo',
       completed: false,
     },
-    {
-      id:'5',
-      title: 'Fazer Reunião 1a1',
-      completed: true,
-    }
   ]);
 
   const handleTaskClick = (taskId) => {
