@@ -8,8 +8,6 @@ import Header from "./Components/Header";
 
 import "./App.css"
 
-
-
 const App = () => {
   const [tasks, setTasks] = useState([
     {
@@ -66,12 +64,10 @@ const App = () => {
     setTasks(newTasks)
   };
 
-
   return (
     <Router>
       <div className="container"> 
         <Header />
-        
             <AddTask handleTaskAddition={handleTaskAddition} />
             <Tasks tasks={tasks} 
             handleTaskClick={handleTaskClick} 
@@ -80,6 +76,5 @@ const App = () => {
     </Router>
   );
 };
-
 
 export default App;
